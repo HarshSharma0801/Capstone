@@ -20,9 +20,9 @@ const Calculate = () => {
       console.log(error);
     }
   };
-useEffect(()=>{
-    getdata();
-},[])
+// useEffect(()=>{
+//     getdata();
+// },[])
   const groupedData =
     demo &&
     demo.reduce((accumulator, currentItem) => {
