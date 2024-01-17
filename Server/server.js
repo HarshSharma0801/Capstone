@@ -4,6 +4,9 @@ import cors from 'cors'
 import mongoose from 'mongoose'
 import bodyParser from 'body-parser'
 import Alldata from './Controllers/Alldata.js'
+import Alldata1 from './Controllers/Alldata.js'
+import Alldata2 from './Controllers/Alldata.js'
+import Alldata3 from './Controllers/Alldata.js'
 
 const app = express();
 
@@ -36,6 +39,10 @@ mongoose.connect(process.env.Mongo_ConnectionString);
 //Routes
 
 app.use(Alldata)
+app.use(Alldata1)
+app.use(Alldata2)
+app.use(Alldata3)
+
 
   app.listen(PORT , ()=>{
     console.log(`Server is running on ${PORT}`)

@@ -8,20 +8,13 @@ Alldata.get('/main' , async(req,res)=>{
 
     let data ;
     const Collection = db.collection("main")
-    const {property , main , country2 , country1} = req.query;
+    const {property , main } = req.query;
 
     try {
         if(property==="sector"){
             data = await Collection.find({sector:main}).toArray();
         }
-        if(property==="end_year"){
-            
-            data = await Collection.find({end_year:Number(main)}).toArray();
-        }
-        if(property==="region"){
-            
-            data = await Collection.find({region:main}).toArray();
-        }
+       
         if(property==="news"){
             data = await Collection.find({DocNumber:Number(main)}).toArray();
             if(data.length==0){
@@ -52,31 +45,13 @@ Alldata.get('/main' , async(req,res)=>{
             }
 
         }
-        if(property==="pestle"){
-            data = await Collection.find({pestle:main}).toArray();
-        }
-        if(property==="topic"){
-            data = await Collection.find({topic:main}).toArray();
-        }
-        if(property==="radar"){
-           const data1 = await Collection.find({country:country1}).toArray();
-           const data2 = await Collection.find({country:country2}).toArray();
-           data = {c1:data1 , c2: data2}
-
-        }
-        if(main==="all"){
-           
-             data = await Collection.find({}).toArray();
-              console.log("done")
-        }
-        if(property !== "radar"){
+   
+    
             res.status(200).json({valid:true , data:data} )
 
-        }
-        else{
-            res.status(200).json({valid:true , data1:data.c1 , data2:data.c2} )
+      
 
-        }
+        
         
     } catch (error) {
         console.log(error)

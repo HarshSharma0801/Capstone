@@ -21,7 +21,7 @@ const PieChart = () => {
   const getdata = async () => {
     try {
       await axios
-        .get("/main", {
+        .get("/main1", {
           params: {
             main: Selected,
             property: "region",
