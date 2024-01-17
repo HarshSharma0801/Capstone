@@ -7,7 +7,7 @@ import Alldata from './Controllers/Alldata.js'
 import Alldata1 from './Controllers/Alldata1.js'
 import Alldata2 from './Controllers/Alldata2.js'
 import Alldata3 from './Controllers/Alldata3.js'
-
+import test from './Controllers/test.js'
 const app = express();
 
 const PORT = process.env.PORT || 3000;
@@ -37,7 +37,7 @@ mongoose.connect(process.env.Mongo_ConnectionString);
 
 
 //Routes
-
+app.use(test)
 app.use(Alldata)
 app.use(Alldata1)
 app.use(Alldata2)

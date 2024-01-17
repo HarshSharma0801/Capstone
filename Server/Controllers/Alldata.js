@@ -20,6 +20,7 @@ Alldata.get('/main' , async(req,res)=>{
        
         if(property==="news"){
             data = await Collection.find({DocNumber:Number(main)}).toArray();
+            console.log(data)
             if(data.length==0){
             
                data=[{
