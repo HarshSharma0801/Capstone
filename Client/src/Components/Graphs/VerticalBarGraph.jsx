@@ -28,7 +28,7 @@ const VerticalBarGraph = () => {
   const getdata = async () => {
     try {
       await axios
-        .get("/main2", {
+        .get("/main/twodata", {
           params: {
             main: Selected,
             property: "end_year",

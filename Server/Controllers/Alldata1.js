@@ -3,7 +3,7 @@ import { db } from '../server.js';
 
 const Alldata1 = express();
 
-Alldata1.get('/main1' , async(req,res)=>{
+Alldata1.get('/main/onedata' , async(req,res)=>{
 
 
     let data ;

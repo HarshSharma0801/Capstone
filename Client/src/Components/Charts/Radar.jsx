@@ -31,7 +31,7 @@ const RadarChart = () => {
   const getdata = async () => {
     try {
       await axios
-        .get("/main3", {
+        .get("/main/threedata", {
           params: {
             main: "",
             property: "radar",

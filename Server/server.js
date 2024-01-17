@@ -4,9 +4,9 @@ import cors from 'cors'
 import mongoose from 'mongoose'
 import bodyParser from 'body-parser'
 import Alldata from './Controllers/Alldata.js'
-import Alldata1 from './Controllers/Alldata.js'
-import Alldata2 from './Controllers/Alldata.js'
-import Alldata3 from './Controllers/Alldata.js'
+import Alldata1 from './Controllers/Alldata1.js'
+import Alldata2 from './Controllers/Alldata2.js'
+import Alldata3 from './Controllers/Alldata3.js'
 
 const app = express();
 

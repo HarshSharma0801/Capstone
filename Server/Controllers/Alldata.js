@@ -4,15 +4,18 @@ import { db } from '../server.js';
 const Alldata = express();
 
 Alldata.get('/main' , async(req,res)=>{
+ 
 
 
     let data ;
     const Collection = db.collection("main")
     const {property , main } = req.query;
+            console.log("sector")
 
     try {
         if(property==="sector"){
             data = await Collection.find({sector:main}).toArray();
+            console.log("sector")
         }
        
         if(property==="news"){

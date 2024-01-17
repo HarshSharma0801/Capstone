@@ -16,7 +16,7 @@ const AreaGraph = ()=>{
   
     const getdata = async() => {
       try {
-          await  axios.get('/main1' , {
+          await  axios.get('/main/onedata' , {
             params:{
               main:Selected,
               property:"pestle"
