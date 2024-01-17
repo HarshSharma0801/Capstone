@@ -103,6 +103,9 @@ const [Selected , setSelected] = useState("analytics");
               </svg>
               Graphs
             </div>
+            <div className="text-sm">
+              Please refresh again and again  in case of no data , its maybe because of Deployment tier
+            </div>
         
           </div>
         </div>
