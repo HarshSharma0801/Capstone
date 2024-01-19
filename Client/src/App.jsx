@@ -7,8 +7,8 @@ import Filters from "./Components/Filters/Filters";
 import axios from "axios";
 function App() {
  
-  axios.defaults.baseURL = "https://capstone-backend-gamma.vercel.app/"
-  // axios.defaults.baseURL = "http://localhost:5000/"
+  // axios.defaults.baseURL = "https://capstone-backend-gamma.vercel.app/"
+  axios.defaults.baseURL = "https://capstone-backend-wk42.onrender.com"
 
 
   return (
