@@ -104,7 +104,7 @@ const [Selected , setSelected] = useState("analytics");
               Graphs
             </div>
             <div className="text-sm">
-              Please refresh again and again  in case of no data , its maybe because of Deployment tier
+              PLease wait for 30-40 sec for data to load , its maybe because of Deployment tier thanks
             </div>
         
           </div>
