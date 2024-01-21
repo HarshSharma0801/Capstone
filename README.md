@@ -1,8 +1,10 @@
+# Wait a min while loading live site 
+
 # Capstone
 
 A Data visualization Admin Panel with showcase of Charts , Graphs , interactive ways to display data and much more it contains data of about 1000 document . Data is displayed in such a way that each variable and field s analyzed.
 
-## Video
+## Video  
 
 [CapstoneVideo.webm](https://github.com/HarshSharma0801/Capstone/assets/121893196/f9516573-a66b-4c37-99da-65089a355b2f)
 
